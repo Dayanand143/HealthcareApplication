@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -22,7 +23,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                     {"Doctor Name : Namrata Gavas", "Hospital Address : Kothrud", "Exp : 15yrs", "Mobile No:9898989899", "900"},
                     {"Doctor Name : Sakshi Pathak", "Hospital Address : Pimpri", "Exp : 8yrs", "Mobile No:9898989899", "300"},
                     {"Doctor Name : Swapnil Joshi", "Hospital Address : Katraj", "Exp : 6yrs", "Mobile No:9898989899", "500"},
-                    {"Doctor Name : Amruta Tambe", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"},
+                    {"Doctor Name : Amruta Tambe", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"}
             };
     private String[][] doctor_details2 =
             {
@@ -30,7 +31,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                     {"Doctor Name : Sikha Shaikh", "Hospital Address : Kothrud", "Exp : 15yrs", "Mobile No:9898989899", "900"},
                     {"Doctor Name : Pranali Vichare", "Hospital Address : Pimpri", "Exp : 8yrs", "Mobile No:9898989899", "300"},
                     {"Doctor Name : Swapnil Joshi", "Hospital Address : Katraj", "Exp : 6yrs", "Mobile No:9898989899", "500"},
-                    {"Doctor Name : Sagar Soin", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"},
+                    {"Doctor Name : Sagar Soin", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"}
             };
     private String[][] doctor_details3 =
             {
@@ -38,7 +39,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                     {"Doctor Name : Vishal Kumar", "Hospital Address : Kothrud", "Exp : 15yrs", "Mobile No:9898989899", "900"},
                     {"Doctor Name : Sumant Tingre", "Hospital Address : Pimpri", "Exp : 8yrs", "Mobile No:9898989899", "300"},
                     {"Doctor Name : Rohit Abhyankar", "Hospital Address : Katraj", "Exp : 6yrs", "Mobile No:9898989899", "500"},
-                    {"Doctor Name : Mahesh Rajiwade", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"},
+                    {"Doctor Name : Mahesh Rajiwade", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"}
             };
     private String[][] doctor_details4 =
             {
@@ -46,7 +47,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                     {"Doctor Name : Naveen Singh", "Hospital Address : Kothrud", "Exp : 15yrs", "Mobile No:9898989899", "900"},
                     {"Doctor Name : Sumit Chauhan", "Hospital Address : Pimpri", "Exp : 8yrs", "Mobile No:9898989899", "300"},
                     {"Doctor Name : Anant Parye", "Hospital Address : Katraj", "Exp : 6yrs", "Mobile No:9898989899", "500"},
-                    {"Doctor Name : Amruta Tambe", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"},
+                    {"Doctor Name : Amruta Tambe", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"}
             };
     private String[][] doctor_details5 =
             {
@@ -54,7 +55,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                     {"Doctor Name : Namrata Gavas", "Hospital Address : Kothrud", "Exp : 15yrs", "Mobile No:9898989899", "900"},
                     {"Doctor Name : Sakshi Pathak", "Hospital Address : Pimpri", "Exp : 8yrs", "Mobile No:9898989899", "300"},
                     {"Doctor Name : Swapnil Joshi", "Hospital Address : Katraj", "Exp : 6yrs", "Mobile No:9898989899", "500"},
-                    {"Doctor Name : Amruta Tambe", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"},
+                    {"Doctor Name : Amruta Tambe", "Hospital Address : Deccan", "Exp : 7yrs", "Mobile No:9898989899", "800"}
             };
     TextView tv;
     Button btn;
@@ -114,5 +115,18 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                 );
         ListView lst = findViewById(R.id.listViewDD);
         lst.setAdapter(sa);
+
+        lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent it = new Intent(DoctorDetailsActivity.this,BookAppointmentActivity.class);
+                it.putExtra("text1",title);
+                it.putExtra("text2", doctor_details[i][0]);
+                it.putExtra("text3", doctor_details[i][1]);
+                it.putExtra("text4", doctor_details[i][3]);
+                it.putExtra("text5", doctor_details[i][4]);
+                startActivity(it);
+            }
+        });
     }
 }

@@ -33,7 +33,7 @@ public class FindDoctorActivity extends AppCompatActivity {
         });
 
         CardView dietician = findViewById(R.id.cardFDDietician);
-        familyphysician.setOnClickListener(new View.OnClickListener() {
+        dietician.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
@@ -43,7 +43,7 @@ public class FindDoctorActivity extends AppCompatActivity {
         });
 
         CardView Dentist = findViewById(R.id.cardFDDentist);
-        familyphysician.setOnClickListener(new View.OnClickListener() {
+        Dentist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
@@ -53,7 +53,7 @@ public class FindDoctorActivity extends AppCompatActivity {
         });
 
         CardView Surgeon = findViewById(R.id.cardFDSurgeon);
-        familyphysician.setOnClickListener(new View.OnClickListener() {
+        Surgeon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
@@ -63,7 +63,7 @@ public class FindDoctorActivity extends AppCompatActivity {
         });
 
         CardView cardiologists = findViewById(R.id.cardFDCardiologists);
-        familyphysician.setOnClickListener(new View.OnClickListener() {
+        cardiologists.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(FindDoctorActivity.this,DoctorDetailsActivity.class);
