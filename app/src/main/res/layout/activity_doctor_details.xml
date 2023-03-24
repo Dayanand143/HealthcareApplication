@@ -8,7 +8,7 @@
     tools:context=".DoctorDetailsActivity">
 
     <TextView
-        android:id="@+id/textViewDDName"
+        android:id="@+id/textViewODName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24*7 Healthcare"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewODName"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ListView
