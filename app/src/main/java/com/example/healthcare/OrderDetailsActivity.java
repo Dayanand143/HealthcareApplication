@@ -27,7 +27,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_details);
 
-        btn = findViewById(R.id.buttonODBack);
+        btn = findViewById(R.id.buttonBMDBack);
         lst = findViewById(R.id.listViewOD);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

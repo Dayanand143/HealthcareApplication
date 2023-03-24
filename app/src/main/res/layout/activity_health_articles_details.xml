@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back1"
-    tools:context=".OrderDetailsActivity">
+    tools:context=".HealthArticlesDetailsActivity">
 
     <TextView
-        android:id="@+id/textViewBMName"
+        android:id="@+id/textViewCartName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24*7 Healthcare"
@@ -21,45 +21,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.045" />
 
+    <ImageView
+        android:id="@+id/imageViewHAD"
+        android:layout_width="322dp"
+        android:layout_height="469dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHADitle" />
+
     <TextView
-        android:id="@+id/textViewODTitle"
+        android:id="@+id/textViewHADitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ORDER DETAILS"
-        android:textColor="@color/colorWhite"
-        android:textSize="25sp"
+        android:text="DENTIST"
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBMName"
-        app:layout_constraintVertical_bias="0.01999998" />
-
-    <ListView
-        android:id="@+id/listViewOD"
-        android:layout_width="349dp"
-        android:layout_height="428dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBMDBack"
-        app:layout_constraintEnd_toEndOf="@+id/textViewODTitle"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="@+id/textViewODTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartName"
+        app:layout_constraintVertical_bias="0.047" />
 
     <Button
-        android:id="@+id/buttonBMDBack"
+        android:id="@+id/buttonHADBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:text="BACK"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewOD"
-        app:layout_constraintVertical_bias="0.813" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHAD" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

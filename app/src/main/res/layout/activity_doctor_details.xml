@@ -8,7 +8,7 @@
     tools:context=".DoctorDetailsActivity">
 
     <TextView
-        android:id="@+id/textViewODName"
+        android:id="@+id/textViewBMName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="24*7 Healthcare"
@@ -32,11 +32,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewODName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMName"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ListView
-        android:id="@+id/listViewLT"
+        android:id="@+id/listViewBM"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.373" />
 
     <Button
-        android:id="@+id/buttonODBack"
+        android:id="@+id/buttonBMDBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BACK"
