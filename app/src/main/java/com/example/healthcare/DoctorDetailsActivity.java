@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -70,7 +69,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_doctor_details);
 
         tv = findViewById(R.id.textViewDDTitle);
-        btn = findViewById(R.id.buttonDDBack);
+        btn = findViewById(R.id.buttonLDBack);
 
         Intent it = getIntent();
         String title = it.getStringExtra("title");
@@ -113,7 +112,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                 new String[]{"line1","line2","line3","line4","line5"},
                 new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e}
                 );
-        ListView lst = findViewById(R.id.listViewDD);
+        ListView lst = findViewById(R.id.listViewLT);
         lst.setAdapter(sa);
 
         lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
