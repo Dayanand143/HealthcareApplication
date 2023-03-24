@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/textViewDDTitle"
+        android:id="@+id/textViewODTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deliver Location : Pune"
@@ -63,11 +63,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle"
         app:layout_constraintVertical_bias="0.373" />
 
     <Button
-        android:id="@+id/buttonLDBack"
+        android:id="@+id/buttonODBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

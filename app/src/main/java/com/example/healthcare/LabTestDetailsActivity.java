@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,7 +28,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         tvTotalCost = findViewById(R.id.textViewLDTotalCost);
         edDetails = findViewById(R.id.editTextLDTextMultiLine);
         btnAddToCart = findViewById(R.id.buttonLDAddToCart);
-        btnBack = findViewById(R.id.buttonLDBack);
+        btnBack = findViewById(R.id.buttonODBack);
 
         edDetails.setKeyListener(null);
 

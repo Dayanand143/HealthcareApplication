@@ -1,7 +1,6 @@
 package com.example.healthcare;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.WindowDecorActionBar;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -10,7 +9,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -33,8 +31,8 @@ public class BookAppointmentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_appointment);
 
         tv = findViewById(R.id.textViewAppTitle);
-        ed1 = findViewById(R.id.editTextAppFullName);
-        ed2 = findViewById(R.id.editTextAppAddress);
+        ed1 = findViewById(R.id.editTextLTBFullName);
+        ed2 = findViewById(R.id.editTextLTBAddress);
         ed3 = findViewById(R.id.editTextAppContactNumber);
         ed4 = findViewById(R.id.editTextAppFees);
         dateButton = findViewById(R.id.buttonAppDate);
