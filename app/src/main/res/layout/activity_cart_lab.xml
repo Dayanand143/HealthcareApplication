@@ -71,6 +71,7 @@
         android:text="Total Cost : 1298/-"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalCost" />
 
     <Button
-        android:id="@+id/buttonCartDatePicker"
+        android:id="@+id/buttonCartDate"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/buttonCartTimePicker"
+        android:id="@+id/buttonCartTime"
         style="?android:spinnerStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -134,7 +135,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.872"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCartTimePicker" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCartTime" />
 
     <Button
         android:id="@+id/buttonCartBack"
@@ -146,6 +147,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCartDatePicker" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCartDate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
